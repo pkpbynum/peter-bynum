@@ -1,0 +1,22 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.nav {
+  position: fixed;
+  visibility: hidden;
+  display: none;
+}
+
+.main {
+  flex: 1;
+  background-color: var(--color-background);
+}
+
+.footer {
+  height: 100px;
+  background-color: var(--color-background);
+}
