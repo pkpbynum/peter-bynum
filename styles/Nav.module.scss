@@ -1,0 +1,36 @@
+.nav {
+  position: fixed;
+  top: 64px;
+  right: 128px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 224px;
+  z-index: 99;
+}
+
+.navLink {
+  position: relative;
+  font-family: var(--font-header);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-background);
+  letter-spacing: 0.05em;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 32px;
+    border-radius: 7px;
+    background-color: var(--color-accent);
+    left: -6px;
+    top: -7px;
+    z-index: -1;
+    transition: width 0.225s ease;
+  }
+
+  &:hover:after {
+    width: calc(100% + 10px);
+  }
+}

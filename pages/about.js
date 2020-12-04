@@ -4,7 +4,7 @@ import styles from '../styles/Home/Home.module.scss'
 import HomeHeader from '../components/HomeHeader'
 import Nav from '../components/Nav'
 
-export default function Index() {
+export default function About() {
   return (
     <div className={styles.container}>
       <Nav />

@@ -2,8 +2,9 @@ import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import styles from '../../styles/Home/HomeHeader.module.scss'
 
-const HomeHeader = () => {
+export default function HomeHeader() {
   const tl = useRef(gsap.timeline({ delay: 1 }))
+
   useEffect(() => {
     const { current: _tl } = tl
     _tl.to('#logobox1', { height: 64 })
@@ -49,5 +50,3 @@ const HomeHeader = () => {
     </header>
   )
 }
-
-export default HomeHeader
